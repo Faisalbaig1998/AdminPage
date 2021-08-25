@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  z-index: 111;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  border: 2px solid red;
+  /* background-color: aquamarine; */
+}
+
+#sidebar div {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+#sidebar div a {
+  display: block;
+  line-height: 50px;
+}
+
+#sidebar div a:hover {
+  background-color: aqua;
+}
+
+#header {
+  position: static;
+  float: right;
+  width: 80%;
+  border: 2px solid green;
+}
+
+#main {
+  float: right;
+  width: 80%;
+  height: 600px;
+  background-color: rgba(255, 0, 0, 0.678);
+  border: 2px solid gold;
+}
