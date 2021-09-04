@@ -103,8 +103,9 @@
 }
 
 form {
-  width: 900px;
-  height: 4git 00px;
+  background-color: aqua;
+  width: 90%;
+  height: 600px;
   border: 1px solid green;
   display: flex;
   flex-direction: column;
@@ -119,7 +120,7 @@ form {
 }
 
 input {
-  width: 50%;
+  width: 90%;
   height: 40px;
 }
 
