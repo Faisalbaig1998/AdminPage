@@ -5,12 +5,13 @@
 }
 
 #sidebar {
-  z-index: 111;
+  overflow-y: auto;
   position: fixed;
   width: 20%;
   height: 100%;
+  /* z-index: 111; */
   /* border: 2px solid red; */
-  /* background-color: aquamarine; */
+  /* background-color: rgb(221, 173, 109); */
 }
 
 #sidebar div {
@@ -19,12 +20,20 @@
 }
 
 #sidebar div a {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: black;
+  text-decoration: none;
   display: block;
   line-height: 50px;
 }
 
 #sidebar div a:hover {
   background-color: aqua;
+}
+
+#header h1 {
+  font-family: "Rampart One", cursive;
+  color: redg;
 }
 
 #header {
@@ -37,10 +46,15 @@
 }
 
 #main {
+  /* border-radius: 10px; */
   float: right;
   width: 80%;
   height: 600px;
-  background-color: rgba(255, 0, 0, 0.678);
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.274);
   /* border: 2px solid gold; */
 }
 
@@ -65,6 +79,7 @@
 
 .bar {
   border: 1px solid white;
+
   width: 35px;
   height: 10px;
   background-color: black;
@@ -75,9 +90,9 @@
 }
 
 #login-details a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  text-shadow: 2px 2px 5px red;
+  font-family: "Kaisei HarunoUmi", serif;
+  color: black;
+  /* text-shadow: 2px 2px 5px red; */
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -103,27 +118,32 @@
 }
 
 form {
-  background-color: aqua;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(184, 182, 182, 0.685);
   width: 90%;
-  height: 600px;
-  border: 1px solid green;
+  height: 550px;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-#main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 input {
+  border: 1px solid black;
   width: 90%;
   height: 40px;
+  border-radius: 10px;
 }
 
 input:focus {
   outline: none;
+}
+
+footer {
+  clear: right;
+  float: right;
+  background-color: blue;
+  height: 300px;
+  width: 80%;
 }

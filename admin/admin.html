@@ -9,6 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar Start Here -->
@@ -18,7 +30,8 @@
         <a href="#">Contact Us</a>
         <a href="#">Cateogary</a>
         <a href="#">Users</a>
-        <a href="#">I've made some changes in Experimental branch</a>
+        <a href="#">I've made some </a>
+        <a href="#">changes in Experimental branch</a>
       </div>
     </div>
     <!-- Navbar Ends Here -->
@@ -26,11 +39,24 @@
     <!-- Header Starts here -->
     <div id="header">
       <h1>Dashboard</h1>
-      <div id="burger" onclick="expand()">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <div id="profile" onclick="expand()">
+        <img
+          style="
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid red;
+          "
+          src="../images/DSC_6342.JPG"
+          alt="Profile pic"
+        />
       </div>
+      <!-- <div id="burger" onclick="expand()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div> -->
       <!-- Login Details -->
       <div id="login-details">
         <a href="#">Username</a>
@@ -42,7 +68,7 @@
     <!-- Main Starts here -->
     <div id="main">
       <!-- <div></div> -->
-      <form>
+      <form action="Action.php" method="POST">
         <input type="text" placeholder="Name" />
         <input type="text" placeholder="Number" />
         <input type="text" placeholder="Number" />
@@ -52,5 +78,9 @@
         <input type="text" placeholder="Number" />
       </form>
     </div>
+    <!-- Main Ends Here -->
+
+    <!-- Footer Start Here -->
+    <footer></footer>
   </body>
 </html>
