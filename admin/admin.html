@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Admin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +37,8 @@
         <a href="#">Cateogary</a>
         <a href="#">Users</a>
         <a href="#">I've made some </a>
-        <a href="#">changes in Experimental branch</a>
+        <a href="#">changes in</a>
+        <a href="#">Experimental branch</a>
       </div>
     </div>
     <!-- Navbar Ends Here -->
@@ -39,17 +46,20 @@
     <!-- Header Starts here -->
     <div id="header">
       <h1>Dashboard</h1>
-      <div id="profile" onclick="expand()">
+      <div id="profile">
         <img
           style="
             width: 50px;
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
-            border: 1px solid red;
           "
           src="../images/DSC_6342.JPG"
           alt="Profile pic"
+        />
+        <img
+          onclick="expand()"
+          src="https://img.icons8.com/material-rounded/24/000000/sort-down.png"
         />
       </div>
       <!-- <div id="burger" onclick="expand()">
@@ -59,6 +69,7 @@
       </div> -->
       <!-- Login Details -->
       <div id="login-details">
+        <a href="#">My Profile</a>
         <a href="#">Username</a>
         <a href="#">Logout</a>
       </div>
@@ -67,15 +78,11 @@
 
     <!-- Main Starts here -->
     <div id="main">
-      <!-- <div></div> -->
       <form action="Action.php" method="POST">
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Number" />
-        <input type="text" placeholder="Number" />
-        <input type="text" placeholder="Number" />
-        <input type="text" placeholder="Number" />
-        <input type="text" placeholder="Number" />
-        <input type="text" placeholder="Number" />
+        <h3>Contact Us</h3>
+        <input type="text" name="name" placeholder="Name" />
+        <br />
+        <input type="email" name="email" placeholder="E-mail" />
       </form>
     </div>
     <!-- Main Ends Here -->
