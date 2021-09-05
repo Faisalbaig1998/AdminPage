@@ -63,25 +63,22 @@
 }
 
 #main {
-  /* border-radius: 10px; */
   float: right;
   width: 80%;
   height: 600px;
   background-color: rgb(236, 236, 236);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.274); */
   /* border: 2px solid gold; */
 }
 
 #login-details {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.664);
+  box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.664);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   width: 250px;
   height: auto;
   position: absolute;
+  display: none;
   top: 50px;
   right: 0px;
   background-color: rgb(196, 191, 191);
@@ -154,10 +151,21 @@ footer {
 }
 
 form {
+  width: 60%;
+  height: auto;
   border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input{
+  width: 300px;
+  height: 40px;
 }
 
 form h3 {
+  /* text-decoration: 2px underline red; */
   text-align: center;
   font-family: "Yatra One", cursive;
 }
