@@ -159,12 +159,32 @@ form {
   align-items: center;
 }
 
-form input{
+form input {
   width: 300px;
   height: 40px;
 }
 
-form h3 {
+input[type="submit"] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  color: bisque;
+  width: 70px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0.685);
+  border: none;
+}
+
+button[type="submit"] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  color: bisque;
+  width: 70px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0.685);
+  border: none;
+}
+
+form h2 {
   /* text-decoration: 2px underline red; */
   text-align: center;
   font-family: "Yatra One", cursive;
