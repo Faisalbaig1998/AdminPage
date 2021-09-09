@@ -6,7 +6,8 @@
         <input type="text" name="name" placeholder="Name" />
         <input type="email" name="email" placeholder="E-mail" />
         <input type="text" name="number" placeholder="4895495945" autocomplete="mobile" required />
-        <textarea name="messagage" id="message"> </textarea>
+        <textarea name="message" id="message"> </textarea>
+        <!-- <input type="text" name="message"> -->
         <button type="submit" name="submit">Submit</button>
         <!-- <input type="submit" name="submit" /> -->
     </form>
