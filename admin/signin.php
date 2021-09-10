@@ -1,16 +1,71 @@
-<?php include('header.inc.php') ?>
-<!-- Main Starts here -->
-<div id="main">
-    <form action="Action.php" method="POST">
-        <h2>Sign In</h2>
-        <input type="text" name="fname" placeholder="First Name" />
-        <input type="text" name="lname" placeholder="Last Name" />
-        <input type="email" name="email" placeholder="E-mail" />
-        <input type="text" name="number" placeholder="4895495945" autocomplete="mobile" required />
-        <!-- <input type="text" name="message"> -->
-        <button type="submit" name="submit">Submit</button>
-        <!-- <input type="submit" name="submit" /> -->
-    </form>
-</div>
-<!-- Main Ends Here -->
-<?php include('footer.inc.php') ?>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body,
+    head {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        border: 2px solid red;
+    }
+
+    input {
+        width: 300px;
+        height: 40px;
+    }
+
+    button {
+        border: none;
+        width: 100px;
+        height: 40px;
+    }
+
+    button:active {
+        border: 1px solid green;
+        width: 100px;
+        height: 40px;
+    }
+
+    #submit{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        background-color: red;
+    }
+
+</style>
+
+<body>
+    <div id="container">
+        <form action="#" method="POST">
+            <input type="text" placeholder="Username">
+            <br>
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <br>
+            <div style="display: flex;justify-content:space-around">
+                <button type="submit" name="submit" id="submit">Submit</button>
+                <button >Sign In</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

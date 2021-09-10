@@ -15,5 +15,3 @@ else{
     echo 'No Connection';
     // die("no connection".mysqli_connect_error());
 }
-
-?>
