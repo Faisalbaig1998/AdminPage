@@ -5,6 +5,7 @@
 }
 
 #sidebar {
+  
   z-index: 111;
   position: fixed;
   width: 20%;

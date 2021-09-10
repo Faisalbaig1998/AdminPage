@@ -9,7 +9,7 @@ $db = 'contacs database';
 $con = mysqli_connect($server,$username,$password,$db);
 
 if($con){
-    echo 'Connection successful';
+    // echo 'Connection successful';
 }
 else{
     echo 'No Connection';
