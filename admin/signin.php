@@ -52,15 +52,15 @@
 
 <body>
     <div id="container">
-        <form action="#" method="POST">
-            <input type="text" placeholder="Username">
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username">
             <br>
             <br>
-            <input type="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password">
             <br>
             <br>
             <div style="display: flex;justify-content:space-around">
-                <button type="submit" name="submit" id="submit">Submit</button>
+                <button type="submit" name="submit" id="submit">Login</button>
                 <button >Sign In</button>
             </div>
         </form>
@@ -69,3 +69,9 @@
 </body>
 
 </html>
+<?php
+if(isset($_POST['submit'])){
+
+}
+
+?>
