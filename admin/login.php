@@ -1,39 +1,15 @@
 <?php
-/* Attempt MySQL server connection. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "", "contacs database");
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+include('connection.inc.php');
+$username = $_POST['username'];
+$password = $_POST['password'];
+$query = " SELECT username, password FROM users ";
+$result = mysqli_query($con, $query);
+$row = mysqli_fetch_array($result);
+
+while($row)
+if ($username == $row['username'] && $password == $row['password']) {
+    header("Location:http://localhost/airborneshoe/admin/index.php", true, 301);
+} else {
+    echo "invalid username or password";
+    header("Location:http://localhost/airborneshoe/admin/signin.php");
 }
- 
-// Attempt select query execution
-$sql = "SELECT * FROM users";
-if($result = mysqli_query($link, $sql)){
-    if(mysqli_num_rows($result) > 0){
-        echo "<table>";
-            echo "<tr>";
-                echo "<th>id</th>";
-                echo "<th>User Name</th>";
-                echo "<th>Password</th>";
-            echo "</tr>";
-        while($row = mysqli_fetch_array($result)){
-            echo "<tr>";
-                echo "<td>" . $row['id'] . "</td>";
-                echo "<td>" . $row['username'] . "</td>";
-                echo "<td>" . $row['password'] . "</td>";
-            echo "</tr>";
-        }
-        echo "</table>";
-        // Free result set
-        mysqli_free_result($result);
-    } else{
-        echo "No records matching your query were found.";
-    }
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-}
- 
-// Close connection
-mysqli_close($link);
