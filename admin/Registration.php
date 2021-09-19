@@ -21,14 +21,14 @@
       <input type="password" name="password" placeholder="Password" /><br />
       <p>Choose Profile Pic</p>
       <input type="file" name="img" accept="image/*" /><br />
-      <input type="radio" id="male" name="male" value="male" checked />
-        <label for="male">Male</label><br />
-      <input type="radio" id="female" name="female" value="female" />
-        <label for="female">Female</label><br />
+      <input type="radio" id="male" name="gender" value="male" checked />
+        <label for="gender">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+        <label for="gender">Female</label><br />
       <button type="submit" name="submit">Submit</button>
       <h1>
         <?php
-        $gender = $_POST['male'];
+        $gender = $_POST['gender'];
         echo $gender;
         ?>
       </h1>
