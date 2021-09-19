@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
 </head>
 <style>
     body,
@@ -21,6 +21,24 @@
         height: 30px;
     }
 
+    .container span a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .container span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        background-color: #EFEFEF;
+        border: 1px solid #8D8D8D;
+        font-family: cursive;
+        font-size: large;
+        width: 100px;
+        height: 40px;
+    }
+
     .buttonCon {
         margin-top: 20px;
         display: flex;
@@ -32,7 +50,6 @@
         font-size: large;
         width: 100px;
         height: 40px;
-
     }
 
     .container {
@@ -61,7 +78,9 @@
             <br>
             <div class="buttonCon">
                 <button type="submit">Submit</button>
-                <button>Register</button>
+                <span>
+                    <a href="Registration.php">Sign Up</a>
+                </span>
             </div>
         </form>
     </div>
