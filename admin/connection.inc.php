@@ -3,7 +3,7 @@
 $username = 'root';
 $password =  '';
 $server = 'localhost';
-$db = 'contacs database';
+$db = 'contact database';
 
 
 $con = mysqli_connect($server,$username,$password,$db);
@@ -15,3 +15,5 @@ else{
     echo 'No Connection';
     // die("no connection".mysqli_connect_error());
 }
+
+?>
