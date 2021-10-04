@@ -72,9 +72,9 @@
     <div class="container">
         <form action="Action.php" method="POST">
             <h2 style="text-align: center;">Login</h2>
-            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Username" name="username">
             <br>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" name="password">
             <br>
             <div class="buttonCon">
                 <button type="submit">Submit</button>

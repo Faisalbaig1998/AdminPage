@@ -3,6 +3,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     include 'connection.inc.php';
+    $msg = '';
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number =  $_POST['number'];
@@ -10,11 +11,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
     $cpassword = $_POST['cpassword'];
     $gender = $_POST['gender'];
+    $dob = $_POST['dob'];
+    // $img = $_POST['img'];
     $exists = false;
     if (($password == $cpassword) && $exists == false) {
-        $query = "INSERT INTO `users`(`name`, `number`, `email`, `username`, `password`, `gender`) VALUES ('$name', '$number', '$email', '$username', '$password', '$gender')";
+        $query = "INSERT INTO `users`(`name`, `number`, `email`, `username`, `password`, `gender`, `dob`) VALUES ('$name', '$number', '$email', '$username', '$password', '$gender', '$dob')    ";
         if (mysqli_query($con, $query)) {
-            echo "New Record created successfully";
+            $msg = '
+    <div class="msg" style="font-family:cursive;display:flex;align-items:center;background-color:#90EE90;width:100%;height:40px;border:1px solid green;border: radius 5px;">
+        <p style="color:green" ><strong style="color:green;">Success! </strong>Your Record has been saved</p>
+    </div>';
         } else {
             echo "Error: " . $query . "<br>" . mysqli_error($con);
         }
@@ -34,10 +40,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Sign In</title>
 </head>
 
-<body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+</style>
 
-    <div id="main">
-        <form action="Registration.php" method="POST">
+<body>
+    <?php
+    if($msg == ""){
+        echo "nothing to shoe";
+    }
+    else{
+        // echo $msg;
+    }
+    ?>
+    <div id="main" style="margin-top: 20px;">
+        <form action="Registration.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="Name" /><br />
             <input type="email" name="email" placeholder="Email" /><br />
             <input type="tel" name="number" placeholder="9349033445" /><br />
@@ -45,12 +65,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="password" name="password" placeholder="Password" /><br />
             <input type="password" name="cpassword" placeholder="Confirm Password" /><br />
             <small>Make sure your password is same</small><br>
-            <!-- <p>Choose Profile Pic</p> -->
-            <!-- <input type="file" name="img" accept="image/*" /><br /> -->
+            <p>Choose Profile Pic</p>
+            <input type="file" name="img" accept="image/*" /><br />
             <input type="radio" id="male" name="gender" value="male" />
               <label for="gender">Male</label><br />
             <input type="radio" id="female" name="gender" value="female" />
               <label for="gender">Female</label><br />
+            <input type="date" name="dob" id="dob">
             <button type="submit" name="submit">Submit</button>
             <h1>
             </h1>
