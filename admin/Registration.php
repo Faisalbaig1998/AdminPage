@@ -1,9 +1,9 @@
 <?php
+$msg = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     include 'connection.inc.php';
-    $msg = '';
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number =  $_POST['number'];
@@ -14,19 +14,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dob = $_POST['dob'];
     // $img = $_POST['img'];
     $exists = false;
-    if (($password == $cpassword) && $exists == false) {
-        $query = "INSERT INTO `users`(`name`, `number`, `email`, `username`, `password`, `gender`, `dob`) VALUES ('$name', '$number', '$email', '$username', '$password', '$gender', '$dob')    ";
-        if (mysqli_query($con, $query)) {
-            $msg = '
-    <div class="msg" style="font-family:cursive;display:flex;align-items:center;background-color:#90EE90;width:100%;height:40px;border:1px solid green;border: radius 5px;">
-        <p style="color:green" ><strong style="color:green;">Success! </strong>Your Record has been saved</p>
-    </div>';
-        } else {
-            echo "Error: " . $query . "<br>" . mysqli_error($con);
-        }
-    } else {
-        echo "error";
+
+    $sql =  " SELECT * FROM users WHERE email = '$email' ";
+    $result = mysqli_query($con, $sql);
+    $num = mysqli_num_rows($result);
+    if($num>0){
+        echo 'username already exists';
+        $exists = true;
     }
+    else{
+        if (($password == $cpassword) && $exists == false) {
+            $query = "INSERT INTO `users`(`name`, `number`, `email`, `username`, `password`, `gender`, `dob`) VALUES ('$name', '$number', '$email', '$username', '$password', '$gender', '$dob')    ";
+            if (mysqli_query($con, $query)) {
+                $msg = '
+        <div class="msg" style="font-family:cursive;display:flex;align-items:center;background-color:#90EE90;width:100%;height:40px;border:1px solid green;border: radius 5px;">
+            <p style="color:green" ><strong style="color:green;">Success! </strong>Your Record has been saved</p>
+        </div>';
+            } else {
+                echo "Error: " . $query . "<br>" . mysqli_error($con);
+            }
+        } else {
+            echo "error";
+        }
+    }
+    
+    
 }
 
 ?>
@@ -49,12 +61,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <?php
-    if($msg == ""){
-        echo "nothing to shoe";
+    if ($msg != "") {
+        echo $msg;
     }
-    else{
-        // echo $msg;
-    }
+
     ?>
     <div id="main" style="margin-top: 20px;">
         <form action="Registration.php" method="POST" enctype="multipart/form-data">
