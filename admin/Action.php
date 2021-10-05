@@ -4,20 +4,19 @@ include 'connection.inc.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "Select * From users WHERE username = '$username' AND password = '$password'";
+$query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
 
-$result = mysqli_query($con, $sql);
+$result = mysqli_query($con,$query);
 $num = mysqli_num_rows($result);
 
-echo $num;
 if($num>0){
-    echo "user already exist";
-    header("location: Registration.php");
+    session_start();
+    $_SESSION['ADMIN_USER'] = $username;
+    $_SESSION['STATUS'] = true;
+    header('location: welcome.php');
 }
 else{
-    echo "";
-    exit();
+    echo 'Invalid cardentials';
 }
 
 // $query = " SELECT `username` FROM users";
-?>

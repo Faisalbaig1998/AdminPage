@@ -2,7 +2,6 @@
 $msg = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     include 'connection.inc.php';
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -19,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = mysqli_query($con, $sql);
     $num = mysqli_num_rows($result);
     if($num>0){
-        echo 'username already exists';
+        echo 'Username already exists';
         $exists = true;
     }
     else{
@@ -37,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "error";
         }
     }
-    
     
 }
 
@@ -68,21 +66,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
     <div id="main" style="margin-top: 20px;">
         <form action="Registration.php" method="POST" enctype="multipart/form-data">
-            <input type="text" name="name" placeholder="Name" /><br />
-            <input type="email" name="email" placeholder="Email" /><br />
-            <input type="tel" name="number" placeholder="9349033445" /><br />
-            <input type="text" name="username" placeholder="Username" /><br />
-            <input type="password" name="password" placeholder="Password" /><br />
-            <input type="password" name="cpassword" placeholder="Confirm Password" /><br />
+            <input type="text" name="name" placeholder="Name" required/><br />
+            <input type="email" name="email" placeholder="Email" required/><br />
+            <input type="tel" name="number" placeholder="9349033445" required/><br />
+            <input type="text" name="username" placeholder="Username" required/><br />
+            <input type="password" name="password" placeholder="Password" required/><br />
+            <input type="password" name="cpassword" placeholder="Confirm Password" required/><br />
             <small>Make sure your password is same</small><br>
             <p>Choose Profile Pic</p>
             <input type="file" name="img" accept="image/*" /><br />
-            <input type="radio" id="male" name="gender" value="male" />
+            <input type="radio" id="male" name="gender" value="male" required/>
               <label for="gender">Male</label><br />
             <input type="radio" id="female" name="gender" value="female" />
               <label for="gender">Female</label><br />
-            <input type="date" name="dob" id="dob">
+            <input type="date" name="dob" id="dob" required>
             <button type="submit" name="submit">Submit</button>
+            <button type="reset" name="reset">reset</button>
             <h1>
             </h1>
         </form>
