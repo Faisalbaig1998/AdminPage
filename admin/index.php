@@ -70,7 +70,7 @@
 
 <body style="width: 100%;height:100vh;display:flex;justify-content:center;align-items:center">
     <div class="container">
-        <form action="Action.php" method="POST">
+        <form action="action.php" method="POST">
             <h2 style="text-align: center;">Login</h2>
             <input type="text" placeholder="Username" name="username">
             <br>
