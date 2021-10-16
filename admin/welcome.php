@@ -20,5 +20,8 @@ else{
     <div class="logout">
         <a href="logout.php">Logout</a>
     </div>
+    <div class="category">
+        <a href="categories.php">Category</a>
+    </div>
 </body>
 </html>
