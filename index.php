@@ -26,8 +26,21 @@
         </div>
 
 
+
+
+
+
+
         <div class="card">
-            <img src="" alt="">
+            <img src="images/002/DSC_6343.JPG" alt="">
+            <div class="social">
+                <span class="whatsapp"></span>
+                <span class="amazon"></span>
+                <span class="flipkart"></span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/002/DSC_6343.JPG" alt="">
             <div class="social">
                 <span class="whatsapp"></span>
                 <span class="amazon"></span>
@@ -36,14 +49,11 @@
         </div>
 
 
-        <div class="card">
-            <img src="" alt="">
-            <div class="social">
-                <span class="whatsapp"></span>
-                <span class="amazon"></span>
-                <span class="flipkart"></span>
-            </div>
-        </div>
+
+
+
+
+
     </div>
 
 
