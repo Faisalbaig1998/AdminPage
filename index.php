@@ -19,9 +19,12 @@
         <div class="card">
             <img src="images/002/DSC_6343.JPG" alt="">
             <div class="social">
-                <span class="whatsapp"></span>
-                <span class="amazon"></span>
-                <span class="flipkart"></span>
+                <span class="flipkart"><a href="#"><img src="images/icons/flipkart.png" style="width:50px;height:50px;"
+                            alt=""></a></span>
+                <span class="flipkart"><a href="#"><img src="images/icons/flipkart.png" style="width:50px;height:50px;"
+                            alt=""></a></span>
+                <span class="flipkart"><a href="#"><img src="images/icons/flipkart.png" style="width:50px;height:50px;"
+                            alt=""></a></span>
             </div>
         </div>
 
