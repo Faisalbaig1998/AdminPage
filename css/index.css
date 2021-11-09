@@ -48,7 +48,7 @@ background-color: #5c8b25;
     /* border:2px solid red; */
     width :250px;
     height: 350px;
-    box-shadow: 5px 5px 15px gray;
+    box-shadow: -5px -5px 5px rgb(206, 206, 206), 5px 5px 5px rgb(206, 206, 206);
 }
 
 .card img{
