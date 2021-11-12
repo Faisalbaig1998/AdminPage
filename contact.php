@@ -17,6 +17,8 @@
     <?php include 'partials/header.inc.php'; 
     ?>
 <h1>Contact</h1>
+    <?php include 'partials/footer.inc.php'; 
+    ?>
 </body>
 
 </html>

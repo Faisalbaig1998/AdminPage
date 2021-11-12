@@ -19,14 +19,17 @@
         <div class="card">
             <img src="images/002/DSC_6343.JPG" alt="">
             <div class="social">
-                <span class="flipkart"><a href="#"><img src="images/icons/flipkart.png" style="width:50px;height:50px;"
-                            alt=""></a></span>
-                <span class="flipkart"><a href="#"><img src="images/icons/flipkart.png" style="width:50px;height:50px;"
-                            alt=""></a></span>
-                <span class="flipkart"><a href="#"><img src="images/icons/flipkart.png" style="width:50px;height:50px;"
-                            alt=""></a></span>
+                <span class="flipkart"><a href="https://www.flipkart.com/"><img src="images/icons/flipkart.png"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="amazon"><a href="https://www.amazon.in/"><img src="images/icons/Amazon.jpg"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="whatsapp"><a
+                        href="https://wa.me/+917251863460?text=I'm%20interested%20in%20your%20car%20for%20sale"><img
+                            src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
             </div>
         </div>
+
+
 
 
 
@@ -37,19 +40,68 @@
         <div class="card">
             <img src="images/002/DSC_6343.JPG" alt="">
             <div class="social">
-                <span class="whatsapp"></span>
-                <span class="amazon"></span>
-                <span class="flipkart"></span>
+                <span class="flipkart"><a href="https://www.flipkart.com/"><img src="images/icons/flipkart.png"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="amazon"><a href="https://www.amazon.in/"><img src="images/icons/Amazon.jpg"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="whatsapp"><a
+                        href="https://wa.me/+917251863460?text=I'm%20interested%20in%20your%20car%20for%20sale"><img
+                            src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
             </div>
         </div>
         <div class="card">
             <img src="images/002/DSC_6343.JPG" alt="">
             <div class="social">
-                <span class="whatsapp"></span>
-                <span class="amazon"></span>
-                <span class="flipkart"></span>
+                <span class="flipkart"><a href="https://www.flipkart.com/"><img src="images/icons/flipkart.png"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="amazon"><a href="https://www.amazon.in/"><img src="images/icons/Amazon.jpg"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="whatsapp"><a
+                        href="https://wa.me/+917251863460?text=I'm%20interested%20in%20your%20car%20for%20sale"><img
+                            src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
             </div>
         </div>
+        <div class="card">
+            <img src="images/002/DSC_6343.JPG" alt="">
+            <div class="social">
+                <span class="flipkart"><a href="https://www.flipkart.com/"><img src="images/icons/flipkart.png"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="amazon"><a href="https://www.amazon.in/"><img src="images/icons/Amazon.jpg"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="whatsapp"><a
+                        href="https://wa.me/+917251863460?text=I'm%20interested%20in%20your%20car%20for%20sale"><img
+                            src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/002/DSC_6343.JPG" alt="">
+            <div class="social">
+                <span class="flipkart"><a href="https://www.flipkart.com/"><img src="images/icons/flipkart.png"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="amazon"><a href="https://www.amazon.in/"><img src="images/icons/Amazon.jpg"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="whatsapp"><a
+                        href="https://wa.me/+917251863460?text=I'm%20interested%20in%20your%20car%20for%20sale"><img
+                            src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/002/DSC_6343.JPG" alt="">
+            <div class="social">
+                <span class="flipkart"><a href="https://www.flipkart.com/"><img src="images/icons/flipkart.png"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="amazon"><a href="https://www.amazon.in/"><img src="images/icons/Amazon.jpg"
+                            style="width:60px;height:60px;" alt=""></a></span>
+                <span class="whatsapp"><a
+                        href="https://wa.me/+917251863460?text=I'm%20interested%20in%20your%20car%20for%20sale"><img
+                            src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
+            </div>
+        </div>
+
+
+
+
+
 
 
 
@@ -58,10 +110,7 @@
 
 
     </div>
-
-
-    <footer></footer>
+<?php include 'partials/footer.inc.php';?>
 
 </body>
-
 </html>
