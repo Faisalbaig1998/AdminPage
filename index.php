@@ -14,7 +14,18 @@
 </head>
 
 <body>
-    <?php include 'partials/header.inc.php'; ?>
+    <div>
+    <nav class="navbar" style="position:fixed;">
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="about.php">About</a></li>
+    </ul>
+</nav>
+        <img src="https://source.unsplash.com/1600x900/?shoes,boots" alt="" class="header">
+    </div>
+    <!-- <?php include 'partials/header.inc.php'; ?> -->
     <div class="container">
         <div class="card">
             <img src="images/002/DSC_6343.JPG" alt="">
@@ -110,7 +121,8 @@
 
 
     </div>
-<?php include 'partials/footer.inc.php';?>
+    <?php include 'partials/footer.inc.php';?>
 
 </body>
+
 </html>
