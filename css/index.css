@@ -63,6 +63,22 @@
   object-fit: cover;
 }
 
+.tags span:hover{
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.tags span{
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.295);
+  border-radius: 2px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 70px;
+}
+
 .header{
   height: 50%;
   /* background-image: url('https://source.unsplash.com/1600x900/?nature,water'); */
