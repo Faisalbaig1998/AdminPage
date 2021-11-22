@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icons/Air_Borne.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro&family=Courgette&family=Merriweather+Sans:wght@346&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -42,6 +45,9 @@
             </div>
             <div class="title">
                 <p>Air Borne Eshu shoes</p>
+                <p style="font-family: 'Merriweather Sans', sans-serif;"><b>599</b><small
+                        style="font-size: 10px;color: #f70d1a;text-decoration:line-through;font-weight:bold">999</small>
+                </p>
             </div>
             <div class="social">
                 <span class="flipkart"><a href="https://www.flipkart.com/"><img src="images/icons/flipkart.png"
@@ -53,7 +59,6 @@
                             src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
             </div>
         </div>
-
 
 
 

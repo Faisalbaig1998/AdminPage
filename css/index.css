@@ -44,6 +44,12 @@
   justify-content: space-around;
 }
 
+
+.ainvayi:hover{
+  border: none;
+}
+
+
 .card {
   display: flex;
   flex-direction: column;
@@ -51,8 +57,8 @@
   justify-content: space-between;
   border-radius: 10px;
   /* border:2px solid red; */
-  width: 250px;
-  height: 350px;
+  width: 260px;
+  height: 400px;
   box-shadow: -5px 0px 5px rgb(206, 206, 206), 5px 5px 5px rgb(206, 206, 206);
 }
 
@@ -109,6 +115,10 @@
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   /* font-family: "Permanent Marker", cursive; */
   font-family: 'Castoro', serif;
 }
