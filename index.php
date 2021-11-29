@@ -24,18 +24,24 @@
 </head>
 
 <body>
-    <div>
-        <nav class="navbar" style="position:fixed;">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
-                <li><a href="about.php">About</a></li>
-            </ul>
-        </nav>
-        <img src="https://source.unsplash.com/1600x900/?shoes,boots" alt="" class="header">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
+            <li><a href="about.php">About</a></li>
+        </ul>
     </div>
     <!-- <?php include 'partials/header.inc.php'; ?> -->
+
+
+    <div style="width:100%;display:flex;justify-content:center;align-items:center">
+        <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?shoes,boots">
+        </div>
+
+    </div>
+
     <div class="container">
         <div class="card">
             <div class="tags" style="display:flex;justify-content:center;align-items:center;">
@@ -60,10 +66,7 @@
             </div>
         </div>
 
-
-
-
-
+    
 
     </div>
     <?php include 'partials/footer.inc.php'; ?>
