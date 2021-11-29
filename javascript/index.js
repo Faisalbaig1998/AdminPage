@@ -11,16 +11,3 @@ const next = (images) => {
   let element = document.getElementsByClassName("tags")[0];
 };
 
-window.onscroll = function () {
-  scrollFunc();
-};
-
-function scrollFunc() {
-  var elem = document.getElementsByTagName("body")[0];
-  var scrollY = elem.scrollTop;
-  var scrollX = elem.scrollLeft;
-  console.log(scrollY);
-  console.log(scrollX);
-  document.getElementsByClassName("scrollview")[0].innerHTML = scrollY;
-  document.getElementsByClassName("scrollviewx")[0].innerHTML = scrollX;
-}

@@ -37,9 +37,11 @@
 
     <div style="width:100%;display:flex;justify-content:center;align-items:center">
         <div class="image">
-            <img src="https://source.unsplash.com/1600x900/?shoes,boots">
+            <span><b>&#10094</b></span>
+            <!-- <img src="https://source.unsplash.com/1600x900/?shoes,boots"> -->
+            <img src="images/002/DSC_6342.JPG" alt="">
+            <span onclick="next()"><b>&#10095</b></span>
         </div>
-
     </div>
 
     <div class="container">
@@ -65,9 +67,6 @@
                             src="images/icons/whatsapp.png" style="width:60px;height:60px;" alt=""></a></span>
             </div>
         </div>
-
-    
-
     </div>
     <?php include 'partials/footer.inc.php'; ?>
     <script src="javascript/index.js"></script>

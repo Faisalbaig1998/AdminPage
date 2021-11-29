@@ -5,7 +5,7 @@
 
 .navbar {
   top: 0;
-  position: fixed;
+  /* position: fixed; */
   overflow: hidden;
   z-index: 100;
   background-color: #6ca12e;
@@ -40,7 +40,7 @@
 }
 
 .container {
-  min-height: 800px;
+  /* min-height: 800px; */
   margin-top: 50px;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -48,13 +48,12 @@
   justify-content: space-around;
 }
 
-
-.ainvayi:hover{
+.ainvayi:hover {
   border: none;
 }
 
-
 .card {
+  margin: 20px 0px 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,27 +96,50 @@
   /* background-image: url('https://source.unsplash.com/1600x900/?nature,water'); */
 }
 
-.image img{
+
+.image img {
   width: 100%;
-  height: auto;
+  height: 300px;
   object-fit: contain;
 }
-.address p{
+
+.address p {
   justify-content: left;
   padding: 5px;
 }
 
-.address{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.address {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: large;
   margin-top: 5px;
   margin-left: 20px;
   width: 300px;
-  color:white;
+  color: white;
 }
 
-.image{
-  margin-top: 40px;
+.footer-main {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright {
+  color: #ffffff;
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0px;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.image {
+  /* margin-top: 40px; */
   width: 80%;
   /* border: 2px solid red; */
   display: flex;
@@ -152,7 +174,7 @@
   /* justify-content: center; */
   align-items: center;
   /* font-family: "Permanent Marker", cursive; */
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
 }
 
 .social > span a img:hover {
